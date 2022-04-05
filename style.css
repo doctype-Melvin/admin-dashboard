@@ -28,14 +28,26 @@ html, body {
 
 /*Icon*/
 
+.icon-big {
+    width: 47px;
+    height: 47px;
+    border-radius: 50px;
+}
+
 .icon-mid {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
 
 .icon-small {
     width: 30px;
     height: 30px;
+}
+
+.icon-smaller {
+    width: 20px;
+    height: 20px;
 }
 
 /*-----------------*/
@@ -90,6 +102,40 @@ padding: 20px;
 .header {
     grid-area: 1 / 2 / 2 / 4;
     background-color: #fff;
+}
+
+.head-grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+
+.search {
+    display: grid;
+    grid-template: 1fr / 0fr 2fr 2fr 2fr;
+    align-items: center;
+}
+#search-icon {
+    justify-self: end;
+}
+
+.user-small {
+    justify-self: end;
+}
+
+.second-row-head {
+    display: grid;
+    grid-template: 1fr / 0fr 1fr 1fr;
+    align-items: center;
+}
+
+.greeting {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+    align-self:;
+}
+
+.small-head {
+    font-size: 0.75em;
 }
 
 
