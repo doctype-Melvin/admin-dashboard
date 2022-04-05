@@ -177,4 +177,44 @@ padding: 20px;
 .main {
     grid-area: 2 / 2 / 3 / 4;
     background-color: #EDF2EF;
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+}
+
+.projects {
+    display: grid;
+    grid-template: 1fr 10fr / 1fr;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 25%));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 25%));
+    gap: 10px;
+}
+
+.news {
+    display: grid;
+    grid-template: 1fr 10fr 1fr 5fr / 1fr;
+}
+
+.news span, .news-card .title, .card .title, .projects span {
+    font-weight: 700;
+}
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(90px, 50%));
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.news-card, .card {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.user-pr {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
 }
