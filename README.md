@@ -1,1 +1,2 @@
 # admin-dashboard
+After my first try with this challenge, I was not satisfied with the outcome. To my taste I utilized too much Flexbox in my previous design. This time I want to focus mainly on CSS Grid as a tool.

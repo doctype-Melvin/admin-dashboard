@@ -1,0 +1,15 @@
+html, body {
+    padding:0;
+    margin: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-shade: #212738;
+    --accent-1: #F97068;
+    --accent-2: #D1D646;
+    --neutral: #EDF2EF;
+    --accent-3: #57C4E5;
+}
