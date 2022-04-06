@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
-
 html, body {
     height: 100vh;
     padding:0;
     margin: 0;
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 *, *::before, *::after {
@@ -157,6 +155,10 @@ padding: 20px;
     font-size: 0.75em;
 }
 
+.name {
+    font-weight: 700;
+    font-size: 1.25em;
+}
 .buttons button {
     background-color: var(--accent-3);
     color: #fff;
@@ -166,11 +168,14 @@ padding: 20px;
     padding: 10px 25px;
     font: inherit;
     font-weight: 800;
+    margin-right: 20px;
 }
 
 .buttons {
     justify-self: end;
 }
+
+/*Header end*/
 
 /*--------------*/
     /*Main*/
@@ -179,42 +184,121 @@ padding: 20px;
     background-color: #EDF2EF;
     display: grid;
     grid-template: 1fr / 3fr 1fr;
+    padding: 20px;
 }
 
-.projects {
-    display: grid;
-    grid-template: 1fr 10fr / 1fr;
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 25%));
-    grid-template-rows: repeat(auto-fit, minmax(150px, 25%));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
 }
 
-.news {
+
+.card {
     display: grid;
-    grid-template: 1fr 10fr 1fr 5fr / 1fr;
+    grid-template: 0fr 1fr 1fr / 1fr;
+    border-left: 5px solid var(--accent-2);
 }
 
-.news span, .news-card .title, .card .title, .projects span {
+.share {
+    justify-self: end;
+}
+
+.card-title {
     font-weight: 700;
-}
-.news-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(90px, 50%));
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.news-card, .card {
+.card-content {
+    text-align: justify;
+}
+
+.main-right {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    margin-left: 20px;
+}
+
+.feed hr {
+    opacity: 0.3;
+}
+
+.feed-card {
+    font-size: 0.8em;
+    color: rgb(42, 42, 42);
+}
+
+.profiles {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.profile {
+    display: grid;
+    grid-template: 1fr / 0fr 1fr;
+    align-items: center;
+}
+
+.username {
+    display: grid;
+    grid-template: 0fr 1fr / 1fr;
+}
+
+.avi {
+    height: 45px;
+    border-radius: 25px;
+}
+
+.profile span {
+    font-size: .9em;
+}
+
+.profile img {
+    margin-right: 10px;
+}
+
+/*Multi-Selector Rules*/
+
+.feed, .profiles, .card {
     background-color: #fff;
+    padding: 15px 25px;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.131);
 }
 
-.user-pr {
-    display: grid;
-    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+.navigation > *:hover {
+    background-color: #a1daec;
+    border-radius: 15px;
+}
+
+.user-small > *:hover,
+.buttons > *:hover,
+.share > a > *:hover,
+.profile:hover,
+.card:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.user-small > *:hover,
+.buttons > *:hover,
+.share > a > *:hover,
+.profile:hover,
+.card:hover, .navigation > *:hover {
+    transition: 0.2s;
+}
+.user-small > *,
+.buttons > *,
+.share > a > *,
+.profile,
+.card, .navigation > * {
+    transition: 0.2s;
 }
