@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get it done</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="content">
+            <button class="newBtn">+</button>
+            <div class="display">
+                <!-- <div class="nav">
+                    <div class="tab">Projects</div>
+                    <div class="tab">Tasks</div>
+                    <div class="tab">Notes</div>
+                </div> -->
+            </div>
+            <!-- Modal Start -->
+            <div class="modal">
+                <div class="modal-content">
+                    <form id="form">
+                        <label for="option">Add new: </label>
+                        <select name="option" id="option">
+                            <option value="make-Selection" selected="true">Make a choice</option>
+                            <option value="task">Task</option>
+                            <option value="project">Project</option>
+                            <option value="note">Note</option>
+                        </select>
+                        
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                        <label for="descr">Description</label>
+                        <input type="text" name="descr" id="descr">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date">
+                        <label for="priority">Priority</label>
+                        <div class="prio">
+                                <label for="high">High
+                                <input class="radio" type="radio" name="priority" id="high">
+                                </label>
+                                <label for="normal">Normal
+                                <input class="radio" type="radio" name="priority" id="normal">
+                                </label>
+                                <label for="low">Low
+                                <input class="radio" type="radio" name="priority" id="low">
+                                </label>
+                            </div>
+                        <button class="btn-add">Add</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Modal End -->
+        </div>
+    </div>
+</body>
+</html>
